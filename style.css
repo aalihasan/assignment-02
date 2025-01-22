@@ -243,6 +243,8 @@ margin: 80px 0px;
 .Our-Stories-container{
   background: url(./assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
   text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
 
 }
 
@@ -345,7 +347,8 @@ padding-right: 30px;
 
 .footer{
   background-color: rgb(1, 172, 253);
- height: fit-content;
+ max-width: 1440px;
+
 }
 
 .footer-container{
@@ -362,7 +365,6 @@ font-family: Quicksand;
 .menus>nav>ul{
   list-style: none;
   
-
 }
 .logo-title{
   display: flex;
@@ -382,7 +384,6 @@ line-height: 39.51px;
 letter-spacing: 0%;
 text-align: left;
 }
-
 .colum{
  display: flex;
  flex-direction: column;
@@ -390,9 +391,6 @@ text-align: left;
  height: 400px;
 margin-top: 100px;
 }
-
-
-
 .item >a{
   font-size: 1.25rem;
 width: 57.87px;
@@ -453,13 +451,17 @@ line-height: 30px;
     margin: 0 auto;
     gap: 10px;
   }
+  .stores{
+    width: 100%;
+    margin: 0 auto;
+  }
   .Our-Stories-container{
     text-align: center;
   }
    .footer-container{
     display: grid;
     grid-template-columns: 1fr;
-    flex: 1;
-    padding-left: 50px;
+    
+    padding-left: 40px;
   }
 }
