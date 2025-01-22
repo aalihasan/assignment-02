@@ -26,7 +26,7 @@ text-align: left;
 }
 
 .navbar{
-  max-width: 1480px;
+  max-width: 1440px;
   margin: 0 auto;
   justify-content:space-between;
   align-items: center;
@@ -61,15 +61,81 @@ hr{
   visibility: hidden;
 }
 
+/* style banner section  */
+
+.banner{
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.banner-title{
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.banner-heading{
+font-size: 3.5rem;
+font-weight: 700;
+line-height: 61px;
+letter-spacing: 0%;
+text-align: left;
+color: rgb(17, 17, 17);
+}
+.Empower{
+color: rgb(254, 163, 1);
+}
+.towards{
+color: rgb(1, 172, 253);
+}
+.banner-description{
+color: rgb(17, 17, 17);
+font-size: 1.25rem;
+font-weight: 400;
+
+
+}
+
+.btn-black{
+width: 197px;
+height: 50px;
+align-items: center;
+letter-spacing: 0%;
+text-align: center;
+border: none;
+color: rgb(255, 255, 255);
+font-size: 1.25rem;
+font-weight: 700;
+border-radius: 12px;
+background-color: rgb(17, 17, 17);
+
+}
+.banner-image{
+  max-width: 450px;
+  margin: 0 auto;
+}
+
 /* responsive media query  */
 
 @media screen and (max-width:576px) {
   .nav-links,
   .display-flex h1,
-  .btn-red{
+  .btn-red,
+  marquee{
     display: none;
   }
   .btn-red-img,hr{
     visibility: visible;
+  }
+  .banner{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+  .banner-title,.banner-heading{
+    
+    text-align: center;
   }
 }
