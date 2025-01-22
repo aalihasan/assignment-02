@@ -130,7 +130,7 @@ background-color: rgb(17, 17, 17);
 }
 .card-container{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .curriculam>h1{
@@ -222,11 +222,7 @@ font-weight: 700;
 line-height: 28px;
 border: none;
 }
-.card-container{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
+
 
 .arrow{
 text-align: center;
@@ -243,13 +239,196 @@ margin: 80px 0px;
   font-weight: 600;
 }
 
+/* our stories container styles  */
+.Our-Stories-container{
+  background: url(./assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+  text-align: center;
+
+}
+
+.stores-container{
+  display: flex;
+  justify-content: space-between; 
+}
+.stores-image{
+width: 540px;
+border: 1px solid tomato;
+border-radius: 16px;
+border: none;
+background: rgb(255, 255, 255);
+}
+.stores-image img{
+border-radius: 16px 16px 0px 0px;
+}
+
+.stores{
+width: 290px;
+border: 1px solid wheat;
+border-radius: 16px 16px 0px 0px;
+background: rgb(255, 255, 255);
+border: none;
+}
+.stores img{
+  border-radius: 16px 16px 0px 0px
+}
+.small-image{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.btn-store{
+margin-left: 100px;
+margin-top: -100px;
+}
+.btn{
+width: 240px;
+height: 70px;
+border-radius: 8px;
+border-radius: 47.93px;
+background: rgb(60, 216, 232);
+font-size: 1rem;
+border: none;
+margin-left: px;
+margin-top: -120px;
+color: rgb(255, 255, 255);
+font-family: Raleway;
+}
+.btn1{
+width: 240px;
+height: 70px;
+border-radius: 8px;
+border-radius: 47.93px;
+background: rgb(149, 178, 38);
+font-size: 1rem;
+border: none;
+margin-left: 20px;
+margin-top: -120px;
+color: rgb(255, 255, 255);
+font-family: Raleway;
+}
+.btn2{
+width: 240px;
+height: 70px;
+border-radius: 8px;
+border-radius: 47.93px;
+background: rgb(93, 88, 240);
+font-size: 1rem;
+border: none;
+margin-left: 20px;
+margin-top: -120px;
+color: rgb(255, 255, 255);
+font-family: Raleway;
+}
+.kin{
+color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 15.34px;
+font-weight: 700;
+line-height: 28.76px;
+letter-spacing: 0%;
+padding-left: 30px;
+padding-right: 20px;
+}
+.kin-description{
+color: rgb(102, 102, 102);
+font-family: Raleway;
+font-size: 15.34px;
+font-weight: 500;
+line-height: 28.76px;
+letter-spacing: 0%;
+text-align: justify;
+padding-left: 30px;
+padding-right: 30px;
+}
+
+/* stles footer section  */
+
+.footer{
+  background-color: rgb(1, 172, 253);
+ height: fit-content;
+}
+
+.footer-container{
+width: 100%;
+margin: 0 auto;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-bottom: 100px;
+color: rgb(255, 255, 255);
+font-family: Quicksand;
+}
+
+.menus>nav>ul{
+  list-style: none;
+  
+
+}
+.logo-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-title img{
+  width: 200px;
+  height: 200px;
+}
+.logo-title>h1{
+  color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 2.8rem;
+font-weight: 700;
+line-height: 39.51px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.colum{
+ display: flex;
+ flex-direction: column;
+ width: 300px;
+ height: 400px;
+margin-top: 100px;
+}
+
+
+
+.item >a{
+  font-size: 1.25rem;
+width: 57.87px;
+height: 25px;
+left: 719.73px;
+top: 2757px;
+color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.icon{
+color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 1.6rem;
+font-weight: 700;
+line-height: 30px;
+
+}
+
+.icon img{
+  padding: 10px;
+}
+
 /* responsive media query  */
 
 @media screen and (max-width:576px) {
   .nav-links,
   .display-flex h1,
   .btn-red,
-  marquee{
+   marquee,
+  .stores-image{
     display: none;
   }
   .btn-red-img,hr{
@@ -267,6 +446,20 @@ margin: 80px 0px;
   .card-container{
     display: flex;
     flex-direction: column;
+    gap: 15px;
+  }
+  .small-image{
+    width: 100%;
+    margin: 0 auto;
     gap: 10px;
+  }
+  .Our-Stories-container{
+    text-align: center;
+  }
+   .footer-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    flex: 1;
+    padding-left: 50px;
   }
 }
